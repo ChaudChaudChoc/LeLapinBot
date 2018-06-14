@@ -2,7 +2,7 @@ const Discord = require("discord.js")
 const bot = new Discord.Client()
 
 //Pour mettre le bot en ligne//
-bot.login("process.env.TOKEN")
+bot.login(process.env.TOKEN)
 
 
 

@@ -76,8 +76,7 @@ if (message.content.startsWith("%L Girl")) {
 }})
 
 bot.on("guildMemberAdd", function (join) {
-    let myRole = join.guild.roles.find("id", "371434575509061632")
-    let member = join.member.addRole("371434575509061632")
+    join.member.addRole("371434575509061632")
 })
 
 bot.on("message", function (message) {

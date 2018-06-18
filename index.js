@@ -75,13 +75,9 @@ if (message.content.startsWith("%L Girl")) {
 }
 }})
 
-bot.on("guildMemberAdd", function (join) {
-    if (join.member.roles.has("371434575509061632")) {
-        
-    } else {
-        let myRole = join.guild.roles.find("id", "371434575509061632") 
-        let member = join.member.addRole("371434575509061632")
-    }
+bot.on("guildMemberAdd", function (member) {
+    let myRole = member.guild.roles.find("id", "371434575509061632") 
+    let member = member.member.addRole("371434575509061632")
 })
 
 bot.on("message", function (message) {

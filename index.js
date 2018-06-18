@@ -75,11 +75,6 @@ if (message.content.startsWith("%L Girl")) {
 }
 }})
 
-bot.on("guildMemberAdd", function (membre) {
-    let myRole = membre.guild.roles.find("id", "371434575509061632") 
-    let member = membre.member.addRole("371434575509061632")
-})
-
 bot.on("message", function (message) {
     if (message.content.startsWith("%L game")) {
         if (message.content === "%L game dofus") {

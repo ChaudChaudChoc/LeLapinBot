@@ -15,7 +15,7 @@ bot.on("message", function (message) {
             } else {
             let myRole = message.guild.roles.find("id", "426781238037053451")
             let member = message.member.addRole("426781238037053451")
-            message.reply("Tu a rejoin l'ile de la top-lane")
+            message.react('✅')
         }} else { //MID//
             if (message.content === "%L role mid") {
                 if(message.member.roles.has("426780978808356864")) {
@@ -23,7 +23,7 @@ bot.on("message", function (message) {
                 } else {
                 let myRole = message.guild.roles.find("id", "426780978808356864");
                 let member = message.member.addRole("426780978808356864")
-                message.reply("Tu a rejoin la voie rapide")
+                message.react('✅')
             }} else { //JGL//
                 if (message.content === "%L role jungle") {
                     if(message.member.roles.has("426780721412177924")) {
@@ -31,7 +31,7 @@ bot.on("message", function (message) {
                     } else {
                     let myRole = message.guild.roles.find("id", "426780721412177924");
                     let member = message.member.addRole("426780721412177924")
-                    message.reply("Tu a rejoin la jungle des prédateurs")
+                    message.react('✅')
                 }} else { //ADC//
                     if (message.content === "%L role adc") {
                         if(message.member.roles.has("426781158856982528")) {
@@ -39,7 +39,7 @@ bot.on("message", function (message) {
                         } else {
                         let myRole = message.guild.roles.find("id", "426781158856982528");
                         let member = message.member.addRole("426781158856982528")
-                        message.reply("Tu a rejoin la voie du tireur d'élite")
+                        message.react('✅')
                     }} else {
                         if (message.content === "%L role support") {
                             if(message.member.roles.has("426780893194092544")) {
@@ -47,7 +47,7 @@ bot.on("message", function (message) {
                             } else {
                             let myRole = message.guild.roles.find("id", "426780893194092544");
                             let member = message.member.addRole("426780893194092544")
-                            message.reply("Tu a rejoin la voie de l'appat")
+                            message.react('✅')
                         }} else {
                             if (message.content === "%L role help"){
                             message.channel.send("%L top pour le rôle de la voie du haut")
@@ -71,7 +71,7 @@ if (message.content.startsWith("%L Girl")) {
     } else {
     let myRole = message.guild.roles.find("id", "373796418235924491")
     let member = message.member.addRole("373796418235924491")
-    message.reply("Bienvenu a toi la lapine <3")
+    message.react('✅')
 }
 }})
 
@@ -83,7 +83,7 @@ bot.on("message", function (message) {
                 message.reply("Tu est déja abonné a ce jeu")
             } else {
             let member = message.member.addRole("456802619680096269")
-            message.reply("Tu t'est abonné a ce jeu")
+            message.react('✅')
         }} else {
             if (message.content === "%L game warframe") {
                 let myRole = message.guild.roles.find("id", "456814582493872128")
@@ -91,7 +91,7 @@ bot.on("message", function (message) {
                     message.reply("Tu est déja abonné a ce jeu")
                 } else {
                     let member = message.member.addRole("456814582493872128")
-                    message.reply("Tu à t'est abonné a ce jeu")
+                    message.react('✅')
                 }} else {
                     if (message.content === "%L game fortine") {
                         let member = message.guild.roles.find("id", "456815060820426755")
@@ -99,7 +99,7 @@ bot.on("message", function (message) {
                             message.reply("Tu est déja abonné a ce jeu")
                         } else {
                             let member = message.member.addRole("456815060820426755")
-                            message.reply("Tu t'est abonné a ce jeu")
+                            message.react('✅')
                         }
                     }
                 }

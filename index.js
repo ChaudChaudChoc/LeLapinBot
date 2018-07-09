@@ -106,3 +106,15 @@ bot.on("message", function (message) {
         }
     }
 })
+
+bot.on("message", function (message) {
+    if (message.content === "%Licorne") {
+        let member = message.guild.roles.find("id", "465995316748091402")
+        if (message.member.roles.has("465995316748091402")) {
+            message.react("❌")
+        } else {
+            let member = message.member.addRole("465995316748091402")
+            message.react('✅') 
+        }
+    }
+})
